@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HAPPY 3RD ANNIVERSARY TO US MY BABYY!! 💌</title>
+  <style>
+    :root {
+      --bg1: #ffe6f0;
+      --bg2: #fff;
+      --ink: #6b0f1a;
+      --accent: #ff6b81;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, #ffd6e7 0 40%, transparent 41%),
+        radial-gradient(1200px 800px at 110% 110%, #ffd6e7 0 40%, transparent 41%),
+        linear-gradient(180deg, #fff8fb, #ffeef6 60%, #ffe2ee);
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--ink);
+    }
+
+    .card {
+      width: min(720px, 92vw);
+      background: var(--bg2);
+      border-radius: 28px;
+      box-shadow:
+        0 10px 25px rgba(0,0,0,.08),
+        inset 0 0 0 1px rgba(255,255,255,.8);
+      padding: 28px 28px 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .seal {
+      position: absolute;
+      right: 18px;
+      top: 16px;
+      font-size: 22px;
+      opacity: .65;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: .5px;
+    }
+
+    .subtitle {
+      margin: 0 0 18px;
+      font-size: 14px;
+      opacity: .7;
+    }
+
+    .paper {
+      background: var(--bg1);
+      border-radius: 18px;
+      padding: 22px 20px;
+      line-height: 1.75;
+      white-space: pre-wrap;
+      min-height: 210px;
+      border: 1px solid #ffd6e6;
+      box-shadow: inset 0 10px ;
+      font-size: 18px;
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      opacity: .6;
+      text-align: center;
+    }
+
+    .hearts {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -24px;
+      font-size: 18px;
+      opacity: .65;
+      animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0) translateX(0) rotate(0); opacity: 0; }
+      5%   { opacity: .65; }
+      100% { transform: translateY(-120vh) translateX(40px) rotate(20deg); opacity: 0; }
+    }
+
+    /* Flip Card Styles */
+    .photo-gallery {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 200px;
+      height: 260px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      backface-visibility: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .flip-card-back {
+      background-color: var(--bg1);
+      color: var(--ink);
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="article" aria-label="Love Letter">
+    <div class="seal" aria-hidden="true">💌</div>
+    <h1>HAPPYY 3RD ANNIVERSARY TO US MYY BABYY!! </h1>
+    <p class="subtitle">Typed with all my heart</p>
+
+    <div id="paper" class="paper" aria-live="polite"></div>
+
+    <div class="photo-gallery">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/1.webp" alt="Memory 1">
+          </div>
+          <div class="flip-card-back">
+            This was the day I knew I loved you.
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/2.jpg" alt="Memory 2">
+          </div>
+          <div class="flip-card-back">
+            You make every sunset brighter.
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/3.jfif" alt="Memory 3">
+          </div>
+          <div class="flip-card-back">
+            Forever starts with moments like this.
+          </div>
+        </div>
+      </div>
+       <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/4.png" alt="Memory 3">
+          </div>
+          <div class="flip-card-back">
+            Manifesting maka own pc ta both para maka-play TOGETHER.
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/5.jfif" alt="Memory 3">
+          </div>
+          <div class="flip-card-back">
+            My fav. pic TOGETHER ever since.
+          </div>
+        </div>
+      </div>
+       <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Memories/6.jfif" alt="Memory 3">
+          </div>
+          <div class="flip-card-back">
+            This was the time that I REALLYY REAALLY APPRECIATEE YOUU 'cuz you wait for how many hours
+            para safe rako maka uli. VERYY THANKKFULL TO HAVE YOUU🥺
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer">Forever yours, <span id="sender">Anagel Simacas</span> ❤️</p>
+    <div class="hearts" aria-hidden="true"></div>
+  </main>
+
+  <script>
+    const lines = [
+      "My Dearest Love 💖,",
+      "HAPPPYY 3RD ANNIVERSARY TO USS LALABSS!!",
+      "I want you to know that I'm really into you. I don't have anything na akong ma give sa imuha baby",
+      "But the only thing that I give is my loyalty, faithfulness, and my heart.",
+      "Sorry if masakitan tika usahay tungod lang sa ge gutom ko heheheh. But I just want some lambing hehe",
+      "I hope that you will become successful that you want to become with me. I always say thank you to Father God",
+      "For letting me to know you. I always pray, hope, and manifest that our goals in life is ma kab-ot nato TOGETHER",
+      "Dalia ras panahon baba nu 3 years nata wala sad ko nag expect na ma abot tag ing ani kadugay.",
+      "And I want to say THANK YOUUUU SOO MUCHHH sa imong patience sa akoa ug sa pag care sa akoa all the more",
+      "Samot na sa panahon na down kayko. Thank you for being at my side in my ups and downs in life",
+      "THANK YOUU FOR BEING PROVIDER BABYY!! I appreciate all your efforts. ",
+      "I hope that we will continue to strive more TOGETHER to be a better version of ourselves.",
+      "Once again HAPPPYYY 3RD ANNIVERSARYYY TOO USS MYY LOVEE. SEE YAA LATERRR!! 😘 ",
+
+      "Forever Yours,",
+      "Anagel Simacas 💌"
+    ];
+
+    const paper = document.getElementById("paper");
+    const senderEl = document.getElementById("sender");
+    const yourName = "Anagel Simacas"; // optional: put your real name here
+    if (yourName) senderEl.textContent = yourName;
+
+    async function typeLine(line, speed = 24){
+      for (let i = 0; i < line.length; i++){
+        paper.textContent += line[i];
+        await new Promise(r => setTimeout(r, speed));
+      }
+      paper.textContent += "\n";
+    }
+
+    async function play(){
+      paper.textContent = "";
+      for (const l of lines){
+        await typeLine(l, 24);
+        await new Promise(r => setTimeout(r, 350));
+      }
+    }
+
+    const heartsLayer = document.querySelector(".hearts");
+    function spawnHeart(){
+      const h = document.createElement("div");
+      h.className = "heart";
+      h.textContent = Math.random() < 0.5 ? "❤️" : "💕";
+      h.style.left = Math.random() * 100 + "vw";
+      h.style.animationDuration = 4 + Math.random()*4 + "s";
+      h.style.fontSize = 14 + Math.random()*24 + "px";
+      heartsLayer.appendChild(h);
+      setTimeout(()=>h.remove(), 8000);
+    }
+    setInterval(spawnHeart, 900);
+
+    play();
+  </script>
+</body>
+</html>
